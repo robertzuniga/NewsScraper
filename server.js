@@ -159,29 +159,29 @@ app.post("/articles/:id", function (req, res) {
 });
 
 
-$(document).on("click", "#deletenote", function() {
-    // Grab the id associated with the article from the submit button
-    var thisId = $(this).attr("data-id");
-    // Run a POST request to change the note, using what's entered in the input
-    $.ajax({
-      method: "POST",
-      url: "/articles/" + thisId,
-      data: {
-        // Value taken from note textarea
-        body: ""
-      }
-    })
-      // With that done
-      .done(function(data) {
-        // Log the response
-        console.log(data);
-        // Empty the notes section
-        $("#notes").empty();
-      });
-    // Also, remove the values entered in the textarea for note entry
-    $("#bodyinput").val("");
+// $(document).on("click", "#deletenote", function() {
+//     // Grab the id associated with the article from the submit button
+//     var thisId = $(this).attr("data-id");
+//     // Run a POST request to change the note, using what's entered in the input
+//     $.ajax({
+//       method: "POST",
+//       url: "/articles/" + thisId,
+//       data: {
+//         // Value taken from note textarea
+//         body: ""
+//       }
+//     })
+//       // With that done
+//       .done(function(data) {
+//         // Log the response
+//         console.log(data);
+//         // Empty the notes section
+//         $("#notes").empty();
+//       });
+//     // Also, remove the values entered in the textarea for note entry
+//     $("#bodyinput").val("");
   
-  });
+//   });
 
 
 // Start the server
