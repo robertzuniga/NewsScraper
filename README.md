@@ -12,7 +12,8 @@ npm libraries used
 
 
 Scrape location: 
-http//:websiteName.com/scrape
+https://thawing-fjord-92780.herokuapp.com/scrape
 
 The scrapped news headlines are displayed as well as the an ability to create/delete a note for each headline story.
 
+ deployment ==> https://thawing-fjord-92780.herokuapp.com/
